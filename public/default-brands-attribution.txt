@@ -1,0 +1,9 @@
+# Brand catalog attribution
+
+The bundled catalog includes a filtered, deduplicated selection from the **Brandtree brand ownership dataset, 2026-10-11, https://brandtree.org/data, CC BY 4.0**. The source snapshot is retained in `data/source-brandtree.json`; the downloadable export is https://brandtree.org/data/v1/brands.json. See the [dataset](https://brandtree.org/data) and [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+
+Changes made: selected active/licensed consumer-product categories; excluded unrelated services, retailer-directory categories, discontinued entries, numeric-only and ambiguous generic names; split and filtered aliases; deduplicated names; merged with the previous starter list. Names and aliases are flattened into a plain string array in `data/brands.json`. Source checksums and attribution from the original import are retained separately in the development-only `data/catalog-provenance.json`. Raw snapshots, provenance metadata and generators are excluded from the packaged extension. Brandtree documents brand ownership, not product authenticity or a Trustpilot rating.
+
+The retained starter metadata in `data/source-brands.json` comes from [Simple Icons](https://github.com/simple-icons/simple-icons), downloaded from `https://raw.githubusercontent.com/simple-icons/simple-icons/develop/data/simple-icons.json` on 2026-10-11. The project distributes its collection under [CC0 1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md). Only selected names and aliases, plus curated additions, are included in the final list. No brand records, source links or third-party logos are bundled in that list. Brand names remain their respective owners' trademarks. Listing a brand is not an endorsement or an authenticity certification.
+
+The extension's shield icon is original SVG artwork.
